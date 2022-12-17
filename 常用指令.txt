@@ -1,0 +1,37 @@
+本地配置：
+git config --global user.name/user.email "..."
+
+git项目搭建：
+git init
+git clone "..."
+
+查看文件状态：
+git status [filename]
+
+添加所有文件至暂存区
+git add .
+提交暂存区的内容至本地仓库（-m 附带提交的相关信息）
+git commit -m "..."
+
+生成SSH公钥（当前用户文件夹下的.ssh文件夹）：
+ssh-keygen -t rsa
+
+列出本地分支：
+git branch
+列出远程分支：
+git branch -r
+新建分支：
+git branch "name"
+切换分支：
+git checkout "name"
+新建并切换分支：
+git checkout -b "name"
+合并指定分支到当前分支：
+git merge "name"
+删除分支：
+git branch -d "name"
+
+添加远程仓库：
+git remote add "name" "url"
+查看远程仓库：
+git remote [-v]
